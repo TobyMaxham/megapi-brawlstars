@@ -1,0 +1,46 @@
+{
+    "name": "tobymaxham/megapi-brawlstars",
+    "description": "This package can be used to interact with the MegAPI and the Brawl Stars API.",
+    "keywords": [
+        "TobyMaxham",
+        "zhylon",
+        "brawlstars"
+    ],
+    "homepage": "https://github.com/TobyMaxham/megapi-brawlstars",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":TobyMaxham",
+            "email": "git@maxham.de",
+            "homepage": "https://maxham.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "zhylon/megapi-client": "^1.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "TobyMaxham\\MegApiBrawlStars\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TobyMaxham\\MegApiBrawlStars\\MegApiBsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "cs-fix": "./vendor/bin/pint src/"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
